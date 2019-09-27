@@ -1,0 +1,555 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+}
+
+a {
+    color: #ff4600;
+    -webkit-transition: all .35s;
+    transition: all .35s;
+}
+
+a:hover,
+a:focus {
+    color: #ff4600;
+}
+
+hr {
+    max-width: 100px;
+    margin: 25px auto 0;
+    border-width: 1px;
+    border-color: rgba(34, 34, 34, 0.1);
+}
+
+hr.light {
+    border-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 100px 0;
+}
+
+section h2 {
+    font-size: 50px;
+}
+
+
+/* NAVBAR */
+
+#mainNav {
+    border-color: rgba(34, 34, 34, 0.05);
+    background-color: #222222;
+    -webkit-transition: all .35s;
+    transition: all .35s;
+    font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+#mainNav .navbar-brand {
+    color: #ff4600;
+    font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+#mainNav .navbar-brand:hover,
+#mainNav .navbar-brand:focus {
+    color: #ff4600;
+}
+
+#mainNav .navbar-toggler {
+    font-size: 12px;
+    padding: 8px 10px;
+    color: white;
+    border-color: white;
+}
+
+#mainNav .navbar-nav>li>a {
+    font-size: 11px;
+    font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#mainNav .navbar-nav>li>a.active {
+    color: #ff4600 !important;
+    background-color: transparent;
+}
+
+#mainNav .navbar-nav>li>a.active:hover {
+    background-color: transparent;
+}
+
+#mainNav .navbar-nav>li>a,
+#mainNav .navbar-nav>li>a:focus {
+    color: white;
+}
+
+#mainNav .navbar-nav>li>a:hover,
+#mainNav .navbar-nav>li>a:focus:hover {
+    color: #ff4600;
+}
+
+@media (min-width: 992px) {
+    #mainNav {
+        border-color: transparent;
+        background-color: transparent;
+    }
+    #mainNav .navbar-brand:hover,
+    #mainNav .navbar-brand:focus {
+        color: white;
+    }
+    #mainNav .navbar-nav>li>a,
+    #mainNav .navbar-nav>li>a:focus {
+        color: rgba(255, 255, 255, 0.7);
+    }
+    #mainNav .navbar-nav>li>a:hover,
+    #mainNav .navbar-nav>li>a:focus:hover {
+        color: white;
+    }
+    /* AFTER SCROLL EFFECTS */
+    #mainNav.navbar-shrink {
+        border-color: rgba(34, 34, 34, 0.1);
+        background-color: black;
+    }
+    #mainNav.navbar-shrink .navbar-brand {
+        color: white;
+    }
+    #mainNav.navbar-shrink .navbar-brand:hover,
+    #mainNav.navbar-shrink .navbar-brand:focus {
+        color: #ff4600;
+    }
+    #mainNav.navbar-shrink .navbar-nav>li>a,
+    #mainNav.navbar-shrink .navbar-nav>li>a:focus {
+        color: white;
+    }
+    #mainNav.navbar-shrink .navbar-nav>li>a:hover,
+    #mainNav.navbar-shrink .navbar-nav>li>a:focus:hover {
+        color: #ff4600;
+    }
+}
+
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    z-index: 2;
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 4rem;
+    position: relative;
+    opacity: 0.65;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+    header {
+        /* TODO - Replace Mobile Background Fallback */
+        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    header video {
+        display: none;
+    }
+}
+
+
+/* JOIN */
+
+section.join {
+    position: relative;
+    padding: 150px 0;
+    background-image: url("../img/rover4.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+section.join .container {
+    position: relative;
+    z-index: 1;
+}
+
+section.join h2 {
+    font-size: 50px;
+    margin-top: 0;
+    color: white;
+}
+
+section.join p {
+    margin-bottom: 40px;
+    color: #e2e2e2;
+}
+
+section.join .slack {
+    margin: auto;
+    margin-bottom: 0;
+}
+
+section.join .slack {
+    font-size: 40px;
+    line-height: 80px;
+    display: block;
+    width: 400px;
+    height: 400px;
+    color: white;
+    border-radius: 100%;
+    background-color: #521453;
+    text-align: center;
+    position: relative;
+}
+
+section.join .slack:hover {
+    background-color: #3F0F3F;
+}
+
+section.join .slack .hash {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 350px;
+    transform: translate(-50%, -50%);
+    background: url('https://api.iconify.design/fa-brands:slack-hash.svg?color=white') no-repeat center center / contain;
+}
+
+section.join .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) {
+    section.join h2 {
+        font-size: 70px;
+    }
+}
+
+
+/* TEAMS = CONTACT*/
+
+section.teams {
+    background-color: black;
+}
+
+section.teams .section-heading {
+    margin-bottom: 30px;
+    color: white;
+}
+
+section.teams .section-heading h2 {
+    margin-top: 0;
+}
+
+section.teams .section-heading p {
+    margin-bottom: 0;
+    color: #C6C6C6;
+}
+
+section.teams .device-container,
+section.teams .feature-item {
+    max-width: 325px;
+    margin: 0 auto;
+}
+
+section.teams .device-container {
+    margin-bottom: 100px;
+}
+
+@media (min-width: 992px) {
+    section.teams .device-container {
+        margin-bottom: 0;
+    }
+}
+
+section.teams .feature-item {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+section.teams .feature-item h3 {
+    font-size: 30px;
+}
+
+section.teams .feature-item i {
+    font-size: 80px;
+    display: block;
+    margin-bottom: 15px;
+    background: -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
+    background: linear-gradient(to left, #7b4397, #dc2430);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* ROUNDED ROW ITEM CSS FOR TEAMS AND CONTACT */
+
+.rounded-row-item {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.rounded-row-item img {
+    float: none;
+    display: block;
+    margin: 0;
+    width: 275px;
+    height: 275px;
+}
+
+.rounded-row-item h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+    color: #ffffff;
+}
+
+.rounded-row-item p {
+    margin-top: 0;
+    color: #c6c6c6;
+    text-overflow: ellipsis;
+}
+
+/* CONTACT = SOCIAL */
+
+section.social {
+    text-align: center;
+}
+
+section.social h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+section.social h2 i {
+    color: #c72900;
+}
+
+section.social ul.list-social {
+    margin-bottom: 0;
+}
+
+section.social ul.list-social li a {
+    font-size: 40px;
+    line-height: 80px;
+    display: block;
+    width: 80px;
+    height: 80px;
+    color: white;
+    border-radius: 100%;
+}
+
+section.social ul.list-social li.social-twitter a {
+    background-color: #1da1f2;
+}
+
+section.social ul.list-social li.social-twitter a:hover {
+    background-color: #0d95e8;
+}
+
+section.social ul.list-social li.social-facebook a {
+    background-color: #3b5998;
+}
+
+section.social ul.list-social li.social-facebook a:hover {
+    background-color: #344e86;
+}
+
+section.social ul.list-social li.social-slack a {
+    background-color: #521453;
+}
+
+section.social ul.list-social li.social-slack a:hover {
+    background-color: #3F0F3F;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 25px 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #000000;
+}
+
+footer p {
+    font-size: 12px;
+    margin: 0;
+}
+
+footer ul {
+    margin-bottom: 0;
+}
+
+footer ul li a {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+footer ul li a:hover,
+footer ul li a:focus,
+footer ul li a:active,
+footer ul li a.active {
+    text-decoration: none;
+}
+
+
+/* TEAMS.HTML */
+
+.teams-solo {
+    padding: 7.5rem 0 0.1rem;
+    background-color: #000000;
+}
+
+section.teams-solo .section-heading {
+    margin-bottom: 30px;
+    color: white;
+}
+
+section.teams-solo .section-heading h2 {
+    margin-top: 0;
+}
+
+section.teams-solo .section-heading p {
+    margin-bottom: 0;
+    color: #C6C6C6;
+}
+
+section.teams-solo .container div#rover {
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}
+
+section.teams-solo .container div#doggo {
+    padding-bottom: 2rem;
+}
+
+section.teams-solo .container div#explore {
+    padding-top: 2rem;
+}
+
+.teams-solo .featured-text {
+    padding: 2rem;
+}
+
+.teams-solo .featured-text h4 {
+    color: white;
+}
+
+@media (min-width: 992px) {
+    .teams-solo .featured-text {
+        padding: 0 0 0 2rem;
+        border-left: 0.5rem solid #ff4600;
+    }
+}
+
+.teams-solo .featured-text-left {
+    padding: 2rem;
+}
+
+.teams-solo .featured-text-left h4 {
+    color: white;
+}
+
+@media (min-width: 992px) {
+    .teams-solo .featured-text-left {
+        padding: 0 2rem 0 0;
+        border-right: 0.5rem solid #ff4600;
+    }
+}
+
+/* MISC */
+
+.bg-social {
+    background: #FF4600;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF510E), to(#F94A06));
+    background: linear-gradient(#FF510E, #F94A06);
+}
+
+.no-gutter>[class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.btn-outline {
+    color: white;
+    border: 1px solid;
+    border-color: white;
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+    color: white;
+    border-color: #FF4600;
+    background-color: #FF4600;
+}
+
+.btn {
+    border-radius: 300px;
+    font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.btn-xl {
+    font-size: 11px;
+    padding: 15px 45px;
+}
