@@ -197,8 +197,7 @@ header .overlay {
 
 @media (pointer: coarse) and (hover: none) {
     header {
-        /* TODO - Replace Mobile Background Fallback */
-        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+        background: url('https://discourse.odriverobotics.com/uploads/default/original/2X/e/ef9d9d5532b8613f056f269fa780cef597a7fa1a.jpeg') black no-repeat center center scroll;
     }
     header video {
         display: none;
